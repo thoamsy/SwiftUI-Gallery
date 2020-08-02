@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		594C33B424D6DEC600F7D746 /* TextDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594C33B324D6DEC600F7D746 /* TextDemo.swift */; };
 		59A196A524D6C7E10050E5DC /* SwiftUI_GalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1969224D6C7DE0050E5DC /* SwiftUI_GalleryApp.swift */; };
 		59A196A624D6C7E10050E5DC /* SwiftUI_GalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1969224D6C7DE0050E5DC /* SwiftUI_GalleryApp.swift */; };
 		59A196A724D6C7E10050E5DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1969324D6C7DE0050E5DC /* ContentView.swift */; };
 		59A196A824D6C7E10050E5DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1969324D6C7DE0050E5DC /* ContentView.swift */; };
 		59A196A924D6C7E10050E5DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59A1969424D6C7E10050E5DC /* Assets.xcassets */; };
 		59A196AA24D6C7E10050E5DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59A1969424D6C7E10050E5DC /* Assets.xcassets */; };
+		59A196B524D6C84A0050E5DC /* ViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A196B424D6C84A0050E5DC /* ViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		594C33B324D6DEC600F7D746 /* TextDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDemo.swift; sourceTree = "<group>"; };
 		59A1969224D6C7DE0050E5DC /* SwiftUI_GalleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_GalleryApp.swift; sourceTree = "<group>"; };
 		59A1969324D6C7DE0050E5DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		59A1969424D6C7E10050E5DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -24,6 +27,8 @@
 		59A196A124D6C7E10050E5DC /* SwiftUI-Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Gallery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A196A324D6C7E10050E5DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59A196A424D6C7E10050E5DC /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		59A196B424D6C84A0050E5DC /* ViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCell.swift; sourceTree = "<group>"; };
+		59A196B724D6CE6E0050E5DC /* SwiftUI-Gallery.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SwiftUI-Gallery.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +49,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		594C33B124D6DEA600F7D746 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				594C33B224D6DEAA00F7D746 /* Text */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		594C33B224D6DEAA00F7D746 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				594C33B324D6DEC600F7D746 /* TextDemo.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
 		59A1968C24D6C7DE0050E5DC = {
 			isa = PBXGroup;
 			children = (
+				59A196B724D6CE6E0050E5DC /* SwiftUI-Gallery.entitlements */,
+				59A196B324D6C83D0050E5DC /* Model */,
 				59A1969124D6C7DE0050E5DC /* Shared */,
 				59A1969B24D6C7E10050E5DC /* iOS */,
 				59A196A224D6C7E10050E5DC /* macOS */,
@@ -57,6 +80,7 @@
 		59A1969124D6C7DE0050E5DC /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				594C33B124D6DEA600F7D746 /* Demo */,
 				59A1969224D6C7DE0050E5DC /* SwiftUI_GalleryApp.swift */,
 				59A1969324D6C7DE0050E5DC /* ContentView.swift */,
 				59A1969424D6C7E10050E5DC /* Assets.xcassets */,
@@ -88,6 +112,14 @@
 				59A196A424D6C7E10050E5DC /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		59A196B324D6C83D0050E5DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				59A196B424D6C84A0050E5DC /* ViewCell.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +221,8 @@
 			files = (
 				59A196A724D6C7E10050E5DC /* ContentView.swift in Sources */,
 				59A196A524D6C7E10050E5DC /* SwiftUI_GalleryApp.swift in Sources */,
+				59A196B524D6C84A0050E5DC /* ViewCell.swift in Sources */,
+				594C33B424D6DEC600F7D746 /* TextDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +354,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SwiftUI-Gallery.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QAWWZVREY3;
 				ENABLE_PREVIEWS = YES;
@@ -332,6 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "thoamsy.SwiftUI-Gallery";
 				PRODUCT_NAME = "SwiftUI-Gallery";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -342,6 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SwiftUI-Gallery.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QAWWZVREY3;
 				ENABLE_PREVIEWS = YES;
@@ -354,6 +391,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "thoamsy.SwiftUI-Gallery";
 				PRODUCT_NAME = "SwiftUI-Gallery";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
