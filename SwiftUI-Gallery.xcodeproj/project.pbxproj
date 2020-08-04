@@ -16,6 +16,8 @@
 		59A196A924D6C7E10050E5DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59A1969424D6C7E10050E5DC /* Assets.xcassets */; };
 		59A196AA24D6C7E10050E5DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59A1969424D6C7E10050E5DC /* Assets.xcassets */; };
 		59A196B524D6C84A0050E5DC /* ViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A196B424D6C84A0050E5DC /* ViewCell.swift */; };
+		59B3D74024D9BFC900310447 /* PickerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B3D73F24D9BFC900310447 /* PickerDemo.swift */; };
+		59B3D74224D9C47900310447 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B3D74124D9C47900310447 /* Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		59A196A424D6C7E10050E5DC /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		59A196B424D6C84A0050E5DC /* ViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCell.swift; sourceTree = "<group>"; };
 		59A196B724D6CE6E0050E5DC /* SwiftUI-Gallery.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SwiftUI-Gallery.entitlements"; sourceTree = "<group>"; };
+		59B3D73F24D9BFC900310447 /* PickerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDemo.swift; sourceTree = "<group>"; };
+		59B3D74124D9C47900310447 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				594C33B624D866DB00F7D746 /* DateTimerPickerDemo.swift */,
+				59B3D73F24D9BFC900310447 /* PickerDemo.swift */,
 			);
 			path = Picker;
 			sourceTree = "<group>";
@@ -95,6 +100,7 @@
 				59A1969224D6C7DE0050E5DC /* SwiftUI_GalleryApp.swift */,
 				59A1969324D6C7DE0050E5DC /* ContentView.swift */,
 				59A1969424D6C7E10050E5DC /* Assets.xcassets */,
+				59B3D74124D9C47900310447 /* Util.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -232,7 +238,9 @@
 			files = (
 				59A196A724D6C7E10050E5DC /* ContentView.swift in Sources */,
 				59A196A524D6C7E10050E5DC /* SwiftUI_GalleryApp.swift in Sources */,
+				59B3D74024D9BFC900310447 /* PickerDemo.swift in Sources */,
 				59A196B524D6C84A0050E5DC /* ViewCell.swift in Sources */,
+				59B3D74224D9C47900310447 /* Util.swift in Sources */,
 				594C33B724D866DB00F7D746 /* DateTimerPickerDemo.swift in Sources */,
 				594C33B424D6DEC600F7D746 /* TextDemo.swift in Sources */,
 			);

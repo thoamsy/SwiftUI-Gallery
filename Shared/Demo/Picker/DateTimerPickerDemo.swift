@@ -17,7 +17,7 @@ struct AnyDatePickerStyle<PickerStyle: DatePickerStyle> {
 }
 
 extension View {
-  @ViewBuilder func dateStyle(_ dateStyle: DateStyle) -> some View {
+  @ViewBuilder func datePickerStyle(_ dateStyle: DateStyle) -> some View {
     switch dateStyle {
       case .default:
         self.datePickerStyle(DefaultDatePickerStyle())
@@ -53,7 +53,7 @@ struct DateTimerPickerDemo: View {
         DatePicker("", selection: $date, displayedComponents: [.date])
           .padding()
           .frame(height: 500)
-          .dateStyle(dateStyleSelection)
+          .datePickerStyle(dateStyleSelection)
       }
     }
 }
