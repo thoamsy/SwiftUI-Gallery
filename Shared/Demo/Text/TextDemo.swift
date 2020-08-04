@@ -72,7 +72,7 @@ extension Font.Weight: Identifiable, CustomStringConvertible {
       case .ultraLight:
         return "ultraLight"
       case .regular:
-      fallthrough
+        fallthrough
       default:
         return "regular"
     }
@@ -112,40 +112,38 @@ struct TextDemo: View {
   @State private var content = "Yes"
   @State private var color = Color(UIColor.label)
   @State private var fontStyle: Font.TextStyle = .body
-//  @State private var fontWeight: Font.Weight = .regular
+  //  @State private var fontWeight: Font.Weight = .regular
   @State private var fontDesign: Font.Design = .default
 
 
 
   var body: some View {
     VStack(alignment: .leading) {
-      Text(content)
+      TextField("FOO", text: $content)
         .foregroundColor(color)
         .font(.system(fontStyle, design: fontDesign))
 
-//      TextField("Write the content", text: $content)
-// .textFieldStyle(PlainTextFieldStyle())
+      //      TextField("Write the content", text: $content)
+      // .textFieldStyle(PlainTextFieldStyle())
       ColorPicker("Change the Color", selection: $color)
-      HStack {
-        Picker("Font Style", selection: $fontStyle) {
-          ForEach(Font.TextStyle.allCases) { style in
-            Text(style.description).tag(style)
-          }
-        }.frame(minWidth: 0, maxWidth: .infinity)
-        Spacer()
-        Picker("Font Weight", selection: $fontDesign) {
-          ForEach(Font.Design.allCases) { design in
-            Text(design.description).tag(design)
-          }
-        }.frame(minWidth: 0, maxWidth: .infinity)
-
+      Picker("Font Style", selection: $fontStyle) {
+        ForEach(Font.TextStyle.allCases) { style in
+          Text(style.description).tag(style)
+        }.pickerStyle(SegmentedPickerStyle())
       }
+      Picker("Font Weight", selection: $fontDesign) {
+        ForEach(Font.Design.allCases) { design in
+          Text(design.description).tag(design)
+        }
+      }
+
     }.padding()
   }
 }
 
 struct TextDemo_Previews: PreviewProvider {
-    static var previews: some View {
-        TextDemo()
-    }
+  static var previews: some View {
+    TextDemo()
+  }
 }
+

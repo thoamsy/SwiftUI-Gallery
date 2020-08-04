@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		594C33B424D6DEC600F7D746 /* TextDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594C33B324D6DEC600F7D746 /* TextDemo.swift */; };
+		594C33B724D866DB00F7D746 /* DateTimerPickerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594C33B624D866DB00F7D746 /* DateTimerPickerDemo.swift */; };
 		59A196A524D6C7E10050E5DC /* SwiftUI_GalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1969224D6C7DE0050E5DC /* SwiftUI_GalleryApp.swift */; };
 		59A196A624D6C7E10050E5DC /* SwiftUI_GalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1969224D6C7DE0050E5DC /* SwiftUI_GalleryApp.swift */; };
 		59A196A724D6C7E10050E5DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1969324D6C7DE0050E5DC /* ContentView.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		594C33B324D6DEC600F7D746 /* TextDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDemo.swift; sourceTree = "<group>"; };
+		594C33B624D866DB00F7D746 /* DateTimerPickerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimerPickerDemo.swift; sourceTree = "<group>"; };
 		59A1969224D6C7DE0050E5DC /* SwiftUI_GalleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_GalleryApp.swift; sourceTree = "<group>"; };
 		59A1969324D6C7DE0050E5DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		59A1969424D6C7E10050E5DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 		594C33B124D6DEA600F7D746 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				594C33B524D866B400F7D746 /* Picker */,
 				594C33B224D6DEAA00F7D746 /* Text */,
 			);
 			path = Demo;
@@ -63,6 +66,14 @@
 				594C33B324D6DEC600F7D746 /* TextDemo.swift */,
 			);
 			path = Text;
+			sourceTree = "<group>";
+		};
+		594C33B524D866B400F7D746 /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				594C33B624D866DB00F7D746 /* DateTimerPickerDemo.swift */,
+			);
+			path = Picker;
 			sourceTree = "<group>";
 		};
 		59A1968C24D6C7DE0050E5DC = {
@@ -222,6 +233,7 @@
 				59A196A724D6C7E10050E5DC /* ContentView.swift in Sources */,
 				59A196A524D6C7E10050E5DC /* SwiftUI_GalleryApp.swift in Sources */,
 				59A196B524D6C84A0050E5DC /* ViewCell.swift in Sources */,
+				594C33B724D866DB00F7D746 /* DateTimerPickerDemo.swift in Sources */,
 				594C33B424D6DEC600F7D746 /* TextDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
