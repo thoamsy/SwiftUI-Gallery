@@ -18,6 +18,7 @@
 		59A196B524D6C84A0050E5DC /* ViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A196B424D6C84A0050E5DC /* ViewCell.swift */; };
 		59B3D74024D9BFC900310447 /* PickerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B3D73F24D9BFC900310447 /* PickerDemo.swift */; };
 		59B3D74224D9C47900310447 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B3D74124D9C47900310447 /* Util.swift */; };
+		59B3D74524D9C64D00310447 /* ProgressViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B3D74424D9C64D00310447 /* ProgressViewDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		59A196B724D6CE6E0050E5DC /* SwiftUI-Gallery.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SwiftUI-Gallery.entitlements"; sourceTree = "<group>"; };
 		59B3D73F24D9BFC900310447 /* PickerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDemo.swift; sourceTree = "<group>"; };
 		59B3D74124D9C47900310447 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		59B3D74424D9C64D00310447 /* ProgressViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		594C33B124D6DEA600F7D746 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				59B3D74324D9C4F200310447 /* Indicator */,
 				594C33B524D866B400F7D746 /* Picker */,
 				594C33B224D6DEAA00F7D746 /* Text */,
 			);
@@ -137,6 +140,14 @@
 				59A196B424D6C84A0050E5DC /* ViewCell.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		59B3D74324D9C4F200310447 /* Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				59B3D74424D9C64D00310447 /* ProgressViewDemo.swift */,
+			);
+			path = Indicator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +253,7 @@
 				59A196B524D6C84A0050E5DC /* ViewCell.swift in Sources */,
 				59B3D74224D9C47900310447 /* Util.swift in Sources */,
 				594C33B724D866DB00F7D746 /* DateTimerPickerDemo.swift in Sources */,
+				59B3D74524D9C64D00310447 /* ProgressViewDemo.swift in Sources */,
 				594C33B424D6DEC600F7D746 /* TextDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
